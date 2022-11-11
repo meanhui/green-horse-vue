@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import HealthPage from '@/components/HealthPage'
 
 Vue.use(Router)
 
@@ -7,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: '健康码',
-      component: () => import('@/views/home/index'),
+      name: 'HealthPage',
+      component: HealthPage,
       meta: {
         title:"杭州市扫码通行"
       }
